@@ -1,0 +1,112 @@
+@import 'base.sass'
+@import '_mixins.sass'
+@import '_variables.sass'
+
+
+body
+    @include centralizar
+    flex-direction: column
+
+    font-family: 'Roboto'
+
+    font-size: 1rem    
+
+    #left-content
+        @include centralizar(center, flex-start)
+        flex-direction: column
+        gap: -1rem
+
+        order: 2
+
+        h2
+            color: $bege
+            
+            font-size: 3.75rem
+
+            line-height: 6rem
+
+            span
+                display: block
+
+                color: $roxo
+
+                font-size: 7.25rem
+
+                margin-left: 8px
+
+        button
+            background-color: $roxo
+
+            width: 300px
+            height: 80px
+
+            border: 0
+            border-radius: 15px
+
+            margin: 40px 0
+
+            color: #fff
+
+            font-size: 2rem
+            font-weight: 600
+
+    img
+        margin-top: 10px
+        width: 350px
+
+@media screen and (min-width: 968px)
+    body
+        @include centralizar(space-around, center)
+        flex-direction: row
+
+        font-family: 'Roboto'
+
+        font-size: 1rem    
+
+        #left-content
+            @include centralizar(center, flex-start)
+            flex-direction: column
+            gap: -1rem
+
+            margin-top: 140px
+
+            order: 1
+
+            h2
+                color: $bege
+                
+                font-size: 3.75rem
+
+                line-height: 6rem
+
+                span
+                    display: block
+
+                    color: $roxo
+
+                    font-size: 7.25rem
+
+                    margin-left: 8px
+
+            button
+                background-color: $roxo
+
+                width: 300px
+                height: 80px
+
+                border: 0
+                border-radius: 15px
+
+                margin: 60px 0
+
+                color: #fff
+
+                font-size: 2rem
+                font-weight: 600
+
+        img
+            margin-top: 10px
+
+            width: 350px
+
+            order: 2

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Wise Goat</title>
+</head>
+<body>
+    <div id="left-content">
+        <h2>
+            Wise
+            <span>Goat</span>
+        </h2>
+        <button id="generate-advice">Pedir conselho</button>
+    </div>
+    <!--left-content-->
+    <img src="./assets/bodezinho.png" />
+
+    <script>
+        document.getElementById('generate-advice').addEventListener('click', () => {
+            window.location.href = 'advice.html'
+        })
+    </script>
+</body>
+</html>
